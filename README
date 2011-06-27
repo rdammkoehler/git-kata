@@ -15,3 +15,5 @@ The purpose of this project is to provide practice kata for git to help people l
 * Reverting a change list
 
 * Pushing some but not all commits
+
+* How to force a checkout to a branch that has all kinds of wacky changes but no local content
