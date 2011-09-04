@@ -22,3 +22,14 @@ The purpose of this project is to provide practice kata for git to help people l
     git add right-leg
     git commit -mv 'I added legs'
     git push origin pants
+
+## Finding out who deleted a file
+
+    $ git log -n 1 -- README
+    commit 4a7f8ae2993278fa710a8f286ff92a636c6950d7
+    Author: magnus stahre <ms@xy.org>
+    Date:   Wed Aug 31 20:29:23 2011 -0400
+    
+        Rename README to README.md.
+
+Hence, `README` was removed (actually renamed) in commit *4a7f8ae2993278fa710a8f286ff92a636c6950d7*.
