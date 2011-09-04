@@ -36,7 +36,7 @@ Hence, `README` was removed (actually renamed) in commit *4a7f8ae2993278fa710a8f
 
 ## Finding commits based on commit message
 
-This finds all commits related to issue SPR-8570 in spring-framework:
+This finds all commits related to issue [SPR-8570](https://jira.springsource.org/browse/SPR-8570) in spring-framework:
 
     $ git log --oneline --grep SPR-8570
     7c1c497 Fix typo in SmartLifecycle Javadoc
