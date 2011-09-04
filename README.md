@@ -33,3 +33,19 @@ The purpose of this project is to provide practice kata for git to help people l
         Rename README to README.md.
 
 Hence, `README` was removed (actually renamed) in commit *4a7f8ae2993278fa710a8f286ff92a636c6950d7*.
+
+## Finding commits based on commit message
+
+This finds all commits related to issue SPR-8570 in spring-framework:
+
+    $ git log --oneline --grep SPR-8570
+    7c1c497 Fix typo in SmartLifecycle Javadoc
+    8760c83 Clarify Lifecycle#stop documentation
+    e7cb561 Document Lifecycle#stop concurrency semantics
+
+Since this repository was actually cloned from svn, we can also find the corresponding svn commits:
+
+    $ git svn log --oneline --grep SPR-8570
+    r4836 | Fix typo in SmartLifecycle Javadoc
+    r4831 | Clarify Lifecycle#stop documentation
+    r4822 | Document Lifecycle#stop concurrency semantics
