@@ -49,3 +49,23 @@ Since this repository was actually cloned from svn, we can also find the corresp
     r4836 | Fix typo in SmartLifecycle Javadoc
     r4831 | Clarify Lifecycle#stop documentation
     r4822 | Document Lifecycle#stop concurrency semantics
+
+## Create a log of the work you did over the past week
+    $ git log --author me --since "1 week ago" --date=local > gitlog.me
+    commit 331a41e0d40754f0d504372182882176e5323bfa
+    Author: me <me@c2b1cd26-5903-11df-92e7-4b0514d33ac5>
+    Date:   Thu Sep 15 15:14:50 2011
+
+        Me/You: PRQ-735, consolidated common testing bits for resources into a parent class in the test harness to make maintainance of tests less tedious, cuz thats how we roll.
+    
+        git-svn-id: svn://svn.our.com/REPO/ourproject/trunk@16959 c2b1cd26-5903-11df-92e7-4b0514d33ac5o
+
+    commit 03a6c145784327ef0617a43c30d228f0dcdf48fc
+    Author: me <me@c2b1cd26-5903-11df-92e7-4b0514d33ac5>
+    Date:   Mon Sep 12 17:10:04 2011
+
+        You, Me: PRQ-735, began refactoring resources to new convention by collapsing duplicates, currently reside in NewResource; more class name changes to come.
+    
+        git-svn-id: svn://svn.our.com/REPO/ourproject/trunk@16742 c2b1cd26-5903-11df-92e7-4b0514d33ac5
+
+
